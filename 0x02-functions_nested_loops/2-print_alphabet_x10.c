@@ -9,7 +9,9 @@ int i, ch;
 for (i = 0; i <= 9; i++)
 {
 for (ch = 97; ch <= 122; i++)
+{
 _putchar(ch);
+}
 _putchar('\n');
 }
 }
