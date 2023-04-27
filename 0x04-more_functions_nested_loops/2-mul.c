@@ -6,6 +6,6 @@
  *Return: multiplication of a,b
 */
 int mul(int a, int b)
-{
-return (a * d);
+{ int res = a * b;
+return (res);
 }
