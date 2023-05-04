@@ -16,7 +16,7 @@ x++;
 }
 for (y = 0; y < n && src[y] != '\0'; y++)
 {
-dest[c + y] = '\0';
+dest[x + y] = '\0';
 }
 return (dest);
 }
