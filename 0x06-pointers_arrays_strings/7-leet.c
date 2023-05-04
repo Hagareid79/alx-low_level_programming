@@ -19,5 +19,5 @@ num[x] = arr2[y];
 }
 }
 }
-return (n);
+return (num);
 }
