@@ -13,7 +13,7 @@ while (dest[x])
 {
 x++;
 }
-for (y = 0; srzzzc[y]; y++)
+for (y = 0; src[y]; y++)
 {
 dest[x++] = src[y];
 }
