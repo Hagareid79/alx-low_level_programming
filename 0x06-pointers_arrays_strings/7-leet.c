@@ -13,7 +13,7 @@ for (x = 0; num[x] != '\0'; x++)
 {
 for (y = 0; y < 10; y++)
 {
-if (num[x] == arr1[y]
+if (num[x] == arr1[y])
 {
 num[x] = arr2[y];
 }
