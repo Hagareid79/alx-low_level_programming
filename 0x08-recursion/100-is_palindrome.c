@@ -9,7 +9,7 @@ int li(char *s);
 */
 int is_palindrome(char *s)
 {
-int x = y(s);
+int x = li(s);
 return (check(s, 0, x - 1, x % 2));
 }
 /**
