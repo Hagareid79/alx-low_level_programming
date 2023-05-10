@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-int squ(int x, int y);
+int squ(int n, int y);
 /**
  * _sqrt_recursion - is a function to return squart of number
  *@n: is number
@@ -8,24 +8,24 @@ int squ(int x, int y);
 */
 int _sqrt_recursion(int n)
 {
-return (squ(x, 1));
+return (squ(n, 1));
 }
 /**
  * squ - is a funtion to return squar
- * @x: is the number
+ * @n: is the number
  * @y: is the second parameter
  * Return: integer
 */
-int squ(int x, int y)
+int squ(int n, int y)
 {
 int s = y * y;
-if (s == x)
+if (s == n)
 {
 return (y);
 }
-else if (s < x)
+else if (s < n)
 {
-return (squ(x, y + 1));
+return (squ(n, y + 1));
 }
 else
 {
