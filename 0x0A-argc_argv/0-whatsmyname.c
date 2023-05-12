@@ -5,9 +5,9 @@
  * @v: integer
  * Return: ;
 */
-int main(int a, char const *v[])
+int main(int argc, char const *argv[])
 {
-(void)a;
-printf("%s\n", a[0]);
+printf("%s\n", argv[0]);
+(void)argc;
 return (0);
 }
