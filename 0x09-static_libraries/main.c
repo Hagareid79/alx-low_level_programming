@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.c>
 /**
  *main - ia a main function
  *Return: void
