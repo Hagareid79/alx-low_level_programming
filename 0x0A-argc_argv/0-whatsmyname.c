@@ -1,9 +1,9 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 /**
  * main - print the program name
- * @a: integer
- * @v: integer
+ * @argc: integer
+ * @argv: integer
  * Return: ;
 */
 int main(int argc, char const *argv[])
