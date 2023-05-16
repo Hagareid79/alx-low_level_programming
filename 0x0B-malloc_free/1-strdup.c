@@ -7,18 +7,17 @@
 */
 char *_strdup(char *str)
 {
-int x, y;
+unsigned int x, y;
 char *z;
+x = 0, y = 0;
 if (str == NULL)
 return (NULL);
-for (y = 0; str[y] != '\0'; y++)
-z = malloc(y * sizeof(*str) + 1);
-if (z == 0)
+while (str[y])
+y++;
+z = malloc(sizeof(char) * (y + 1));
+if (z == NULL)
 return (NULL);
-else
-{
-for (x = 0; x < y; x++)
-z[x] = str[x];
-}
+while ((z[x] = str[x]) != '\0')
+x++;
 return (z);
 }
