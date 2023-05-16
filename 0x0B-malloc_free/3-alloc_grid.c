@@ -30,8 +30,8 @@ if (!p[i])
 for (j = 0; j <= i; j++)
 free(p[j]);
 free(p);
-}
 return (NULL);
+}
 }
 for (a = 0; a < height; a++)
 {
@@ -42,4 +42,4 @@ p[a][b] = 0;
 }
 }
 return (p);
-5}
+}
