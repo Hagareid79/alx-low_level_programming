@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * **alloc_grid - create two dim arr
  * @width: is a row
@@ -10,24 +11,26 @@ int **alloc_grid(int width, int height)
 {
 int **arr;
 int x, y;
-arr = malloc(sizeof(*arr) * height);
-if (width <= 0 || hight <= 0 || arr == 0)
-{
+if (height <= 0 || width <= 0)
 return (NULL);
-}
-else
-{
+arr = (int **) malloc(sizeof(int *) * height);
+if (arr == NULL)
+return (NULL);
 for (x = 0; x < height; x++)
 {
-arr[x] = malloc(sizeof(**arr) * width);
-if (arr[x] == 0)
+arr[x] = (int *) malloc(sizeof(int) * width);
+if (arr[x] == NULL)
 {
-while (x--)
-free(arr[x]);
 free(arr);
+for (y = 0; y <= x; y++)
+free(arr[x]);
 return (NULL);
 }
+}
+for (x = 0; x < height; x++)
+{
 for (y = 0; y < width; y++)
+{
 arr[x][y] = 0;
 }
 }
