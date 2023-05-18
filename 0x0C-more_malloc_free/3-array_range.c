@@ -1,5 +1,7 @@
 #include "main.h"
-#include <stdlib.h>z
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
  **array_range - allocates memory
  * @min: is a integer
