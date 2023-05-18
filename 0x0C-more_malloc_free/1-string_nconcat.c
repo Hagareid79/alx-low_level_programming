@@ -1,5 +1,6 @@
 #include "main.h"
-#include <stdio>
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * *string_nconcat - allocates memory
  * @s1: is a integer
