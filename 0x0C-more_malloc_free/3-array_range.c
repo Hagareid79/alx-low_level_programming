@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 /**
  **array_range - allocates memory
@@ -8,7 +8,7 @@
  * @max: is an integer
  * Return: pointer of array
 */
-int *array_range(int min, int max);
+int *array_range(int min, int max)
 {
 int x, y;
 int *z;
