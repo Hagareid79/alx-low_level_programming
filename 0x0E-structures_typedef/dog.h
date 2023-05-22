@@ -6,6 +6,7 @@
  * @age: is the age of dog
  * @owner: is owner,s name
  * Description: just a long dog
+ * Return: struct of dog
 */
 struct dog
 {
