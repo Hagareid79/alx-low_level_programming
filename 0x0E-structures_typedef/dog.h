@@ -11,5 +11,5 @@ struct dog
 char *n;
 float *a;
 char *o;
-}
+};
 #endif
