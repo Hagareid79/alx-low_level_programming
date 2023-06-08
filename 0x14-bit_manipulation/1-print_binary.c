@@ -10,7 +10,7 @@ int b = sizeof(n) * 8, x = 0;
 
 while (b)
 {
-if (n & 1L << --bit)
+if (n & 1L << --b)
 {
 _putchar('1');
 x++;
